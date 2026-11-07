@@ -1,0 +1,33 @@
+.pcc-rmp-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 3px !important;
+  margin: 2px 0 2px 7px !important;
+  padding: 2px 7px !important;
+  border-radius: 5px !important;
+  vertical-align: middle !important;
+  font: 600 12px/1.5 Arial, sans-serif !important;
+  color: #314155 !important;
+  background: #e9edf2 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+}
+.pcc-rmp-badge[data-state="good"] { color: #146c3a !important; background: #d9f5e5 !important; }
+.pcc-rmp-badge[data-state="mid"] { color: #795500 !important; background: #fff0c2 !important; }
+.pcc-rmp-badge[data-state="low"] { color: #963b3b !important; background: #ffe1df !important; }
+.pcc-rmp-badge[data-state="error"] { color: #8f3e3e !important; background: #ffe5e5 !important; }
+.pcc-rmp-badge:hover { text-decoration: underline !important; filter: brightness(.96); }
+
+/* Unassigned instructor badge uses the same neutral colors as a missing-rating badge. */
+.pcc-rmp-badge[data-state="unassigned"] {
+  color: #314155 !important;
+  background: #e9edf2 !important;
+  cursor: help !important;
+  /* Occupies Staff's original position instead of appearing on a new line. */
+  margin: 0 !important;
+  padding: 1px 6px !important;
+}
+.pcc-rmp-badge[data-state="unassigned"]:hover {
+  text-decoration: none !important;
+}

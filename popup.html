@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PCC Professor Ratings</title>
+  <style>
+    body { width: 280px; padding: 12px; font: 14px/1.45 Arial,sans-serif; color: #293440; }
+    h1 { font-size: 17px; margin: 0 0 8px; }
+    p { margin: 7px 0; }
+    button { margin-top: 10px; padding: 7px 10px; cursor: pointer; }
+    #result { margin-top: 10px; min-height: 25px; }
+    a { color: #1556a2; }
+    small { color: #5b6570; }
+  </style>
+</head>
+<body>
+  <h1>PCC Professor Ratings</h1>
+  <p>Ratings appear beside instructor names on <a href="https://findclasses.pasadena.edu/" target="_blank">PCC Class Search</a>.</p>
+  <p><small>Ratings come from Rate My Professors, not PCC.</small></p>
+  <button id="test">Test RMP connection</button>
+  <div id="result" role="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
